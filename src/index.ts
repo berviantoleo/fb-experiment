@@ -10,12 +10,22 @@ import { Posts } from "./responses/posts";
 let dbConnection: Connection;
 const port = 8000;
 
-function processData(posts: Posts[])
+function processData(posts: Posts[], userId: String, accessToken: String)
 {
   // console.log(JSON.stringify(posts));
+  const requests = [];
   for (let post of posts) {
     console.log(`Will delete: ${post.id}`);
+    const req = axios.delete(`https://graph.facebook.com/v11.0/${post.id}?access_token=${accessToken}`);
+    requests.push(req);
   }
+  Promise.allSettled
+  (requests).then(res => {
+    console.log(JSON.stringify(res));
+  }).catch((err) => {
+    console.error(JSON.stringify(err));
+    console.error(err.message);
+  });
 }
 
 
@@ -117,12 +127,12 @@ app.get("/posts", function (req, res) {
           .get(
             `https://graph.facebook.com/v11.0/${result.userId}/posts?access_token=${result.accessToken}`
           )
-          .then((result) => {
+          .then((response) => {
             // console.log(JSON.stringify(result.data));
-            console.log(JSON.stringify(result.headers));
-            const fbResponse = result.data as FbList<Posts>;
-            processData(fbResponse.data);
-            res.send(result.data);
+            console.log(JSON.stringify(response.headers));
+            const fbResponse = response.data as FbList<Posts>;
+            processData(fbResponse.data, result.userId, result.accessToken);
+            res.send(response.data);
           })
           .catch((err) => {
             console.log(JSON.stringify(err));
