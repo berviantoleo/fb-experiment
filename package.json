@@ -7,7 +7,7 @@
     "dev": "ts-node-dev src/"
   },
   "dependencies": {
-    "axios": "^0.21.2",
+    "axios": "^0.24.0",
     "express": "^4.17.1",
     "passport": "^0.4.1",
     "passport-facebook": "^3.0.0",
