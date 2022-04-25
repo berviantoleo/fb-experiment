@@ -12,7 +12,7 @@
     "passport": "^0.5.2",
     "passport-facebook": "^3.0.0",
     "reflect-metadata": "^0.1.13",
-    "sqlite3": "^5.0.4",
+    "sqlite3": "^5.0.5",
     "typeorm": "^0.3.6"
   },
   "devDependencies": {
