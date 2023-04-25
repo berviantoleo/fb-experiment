@@ -16,7 +16,7 @@
     "typeorm": "^0.3.15"
   },
   "devDependencies": {
-    "@types/node": "^18.15.11",
+    "@types/node": "^18.16.0",
     "@types/passport-facebook": "^2.1.11",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.4"
