@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.7.0",
-    "@types/passport-facebook": "^3.0.0",
+    "@types/passport-facebook": "^3.0.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.2.2"
   }

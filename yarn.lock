@@ -151,10 +151,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/passport-facebook@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@types/passport-facebook/-/passport-facebook-3.0.0.tgz#37d60ea7b050cd71fc7731719348de7321d3698a"
-  integrity sha512-hZjXy39X+In1/y607NfGVJEWtl5vuClkAbglcAiq/UBuUSPCu6uBvyGd4wE3ikc4iJ1as3biuanBMrMZus0U5A==
+"@types/passport-facebook@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@types/passport-facebook/-/passport-facebook-3.0.1.tgz#df1441245608f85301cfb3a1327263b3def2a79c"
+  integrity sha512-+wksCaYVbLPd+VhF0yWRt+fcmuYBfAWF0PrVPPy7gxy5kD92P/8G1erxJWVneP8rvPaiqNiBbVQFcDTSLbeK2g==
   dependencies:
     "@types/express" "*"
     "@types/passport" "*"
