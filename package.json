@@ -19,6 +19,6 @@
     "@types/node": "^20.8.9",
     "@types/passport-facebook": "^3.0.2",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2"
   }
 }
